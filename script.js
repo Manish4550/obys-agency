@@ -106,13 +106,17 @@ function loadingAnimation() {
   );
 }
 
+
 function cursorAnimation() {
+     
+   
    Shery.mouseFollower({
   skew: true,
   ease: "cube-bezier(0.23,1,0.320,1)",
   duration: 1,
 });
-  Shery.makeMagnet("#nav-part2 h4");
+    Shery.makeMagnet("#nav-part2 h4"); 
+    
 
 var videocontainerr = document.querySelector("#video-container");
 var video = document.querySelector("#video-container video");
@@ -161,6 +165,8 @@ videocontainerr.addEventListener("click", function(){
 })
 }
 
+
+
 function sheryAnimation() {
   Shery.imageEffect(".image-div", {
     style: 5,
@@ -200,6 +206,26 @@ function sheryAnimation() {
 }
 
 loadingAnimation();
-cursorAnimation();
+
 locomotiveAnimation();
 sheryAnimation();
+cursorAnimation();
+
+document.addEventListener("mousemove", function(dets){
+        gsap.to("#flag", {
+          x:dets.x,
+          y:dets.y
+        })
+})
+document.querySelector("#hero3").addEventListener("mouseenter", function(){
+    gsap.to("#flag",{
+      opacity:1,
+    })
+})
+document.querySelector("#hero3").addEventListener("mouseleave", function(){
+    gsap.to("#flag",{
+      opacity:0,
+    })
+})
+
+
