@@ -787,19 +787,17 @@ width: 48%;
 }
 
 #flag{
-    height: 33vw;
+    height: 25vw;
      /* width: 25vw; */
     position: absolute;
     opacity: 0;    
-    top: 0;
-    left: 0;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    top: -25%;
+    left: ;
+    transform: translate(-50%, -50%);
 
 }
 
-#hero3, #hero1,#hero2,#hero4{
+#hero3,#hero2,#hero4{
     z-index: 999;
     position: relative;
     /* background-color: red; */
