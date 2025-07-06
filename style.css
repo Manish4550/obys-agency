@@ -787,7 +787,7 @@ width: 48%;
 }
 
 #flag{
-    height: 23vw;
+    height: 33vw;
      /* width: 25vw; */
     position: absolute;
     opacity: 0;    
@@ -799,7 +799,7 @@ width: 48%;
 
 }
 
-#hero3{
+#hero3, #hero1,#hero2,#hero4{
     z-index: 999;
     position: relative;
     /* background-color: red; */
