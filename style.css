@@ -786,18 +786,18 @@ width: 48%;
     pointer-events: none;
 }
 
-#flag{
+#flag {
     height: 25vw;
-     /* width: 25vw; */
+    /* width: 25vw; */
     position: absolute;
-    opacity: 0;    
-    top: -25%;
-    left: ;
+    opacity: 0;
+    top: 0%;
+    left: -7%;
     transform: translate(-50%, -50%);
-
+    /* pointer-events: none; Optional: prevents flag from blocking clicks */
 }
 
-#hero3,#hero2,#hero4{
+#hero3, #hero2, #hero4  {
     z-index: 999;
     position: relative;
     /* background-color: red; */
